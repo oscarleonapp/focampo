@@ -65,7 +65,7 @@ body.dark-theme {
   margin-left: 25px;
   /* top: 2.2rem; */
   top: 20rem;
-  display: inline;
+  display: none;
   color: var(--text-color);
   font-size: 1.2rem;
   cursor: pointer;
@@ -89,8 +89,8 @@ body.scale-cv {
   width: 100%;
   display: none;
   position: absolute;
-  top: 22.5rem;
-  margin-right: 25px;
+  top: 2rem;
+  margin-left: -145px;
   /* right: 10; */
   font-size: 1.2rem;
   color: var(--body-color);
