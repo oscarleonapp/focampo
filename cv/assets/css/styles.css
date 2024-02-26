@@ -150,7 +150,7 @@ cial_container .scale-cv .resume_left,
 .scale-cv .education_container,
 .scale-cv .experience_container,
 .scale-cv .certificate_container {
-  gap: 1rem;
+  gap: 0.54rem;
 }
 
 .scale-cv .education_time,
@@ -228,12 +228,12 @@ img {
 }
 
 .section-title {
-  padding: 0 1.5rem;
+  /* padding: 0 0.75rem; */
   font-size: var(--h2-font-size);
   color: var(--vino-tinto);
   font-weight: var(--font-semi-bold);
   text-transform: uppercase;
-  letter-spacing: 0.35rem;
+  letter-spacing: 0.1rem;
   text-align: center;
   margin-bottom: var(--mb-3);
 }
@@ -244,7 +244,7 @@ img {
   color: var(--vino-tinto);
   font-weight: var(--font-semi-bold);
   text-transform: uppercase;
-  letter-spacing: 0.35rem;
+  letter-spacing: 0.1rem;
   text-align: center;
   margin-bottom: var(--mb-3);
 }
@@ -258,7 +258,7 @@ img {
 
 .bd-grid {
   display: grid;
-  gap: 1.5rem;
+  gap: 0.3rem;
 }
 
 .l-header {
@@ -376,8 +376,8 @@ img {
 }
 
 .home_address {
-  gap: 1rem;
-  color: var(--container-color-alt);
+  /* gap: 1rem; */
+  color: var(--title-color);
   padding: 0 1.5rem;
 }
 
@@ -413,18 +413,18 @@ img {
   padding: 0 1.5rem;
   display: grid;
   grid-template-columns: max-content;
-  gap: 1rem;
+  /* gap: 1rem; */
 }
 
 .social_link {
   display: inline-flex;
   align-items: center;
   font-size: var(--small-font-size);
-  color: var(--text-color);
+  color: var(--title-color);
 }
 
 .social_link:hover {
-  color: var(--title-color);
+  color: var(--vino-tinto);
 }
 
 .social_icon {
@@ -502,8 +502,9 @@ img {
 
 .skills_name,
 .languages_name {
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   display: flex;
+  color: var(--title-color);
   align-items: center;
   margin-bottom: var(--mb-3);
 }
@@ -513,7 +514,7 @@ img {
   display: inline-block;
   width: 5px;
   height: 5px;
-  background-color: var(--text-color);
+  background-color: var(--body-color);
   border-radius: 50%;
   margin-right: 0.75rem;
 }
@@ -521,7 +522,7 @@ img {
 /*========== CERTIFICATES ==========*/
 .certificate_title {
   font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-1);
+  /* margin-bottom: var(--mb-1); */
 }
 
 /*========== REFERENCES ==========*/
@@ -559,6 +560,11 @@ img {
   margin-bottom: 0.25rem;
 }
 
+/* QR Section */
+.qr-img {
+  width: 120px;
+}
+
 /* Scroll top */
 .scrolltop {
   position: fixed;
@@ -584,6 +590,7 @@ img {
   visibility: visible;
   bottom: 5rem;
 }
+
 /*========== MEDIA QUERIES ==========*/
 /* For small devices, menu two columns */
 @media screen and (max-width: 320px) {
@@ -657,5 +664,11 @@ img {
   .interests_container {
     grid-template-columns: repeat(4, max-content);
     column-gap: 3.5rem;
+  }
+
+  .skills_name,
+  .social_link,
+  .home_address {
+    color: var(--body-color);
   }
 }
