@@ -838,6 +838,12 @@ section {
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
 }
 
+.sombra-certi {
+  padding: 1px;
+  background-color: var(--azul-oscuro);
+  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+}
+
 .services .icon-box .icon {
   margin: 0 auto;
   width: 100px;
