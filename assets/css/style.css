@@ -15,6 +15,16 @@
   --white: #ffffff;
   --black: #000000;
   --gris-claro: #e6e9ec;
+
+  /*========== Colors ==========*/
+  --title-color: #141d2b;
+  --text-color: #403a3a;
+  --text-color-light: #707070;
+  --container-color: #fafafa;
+  --container-color-alt: #f0efef;
+  --body-color: #fcfcfc;
+  --new-color: #020611;
+  --vino-tinto: #56070c;
 }
 
 /*--------------------------------------------------------------
@@ -62,14 +72,14 @@ h6 {
 }
 
 .back-to-top i {
-  font-size: 28px;
+  font-size: 22px;
   color: var(--white);
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: var(--color-secundario-hover);
-  color: var(--white);
+  background: var(--azul-oscuro);
+  color: var(--vino-tinto);
 }
 
 .back-to-top.active {
@@ -179,7 +189,7 @@ h6 {
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: var(--color-secundario);
+  color: var(--vino-tinto);
   padding: 10px 18px;
   margin-bottom: 8px;
   transition: 0.3s;
@@ -221,7 +231,7 @@ h6 {
 .nav-menu .active:focus,
 .nav-menu li:hover > a {
   color: var(--white);
-  background: var(--color-secundario);
+  background: var(--azul-oscuro);
 }
 
 .nav-menu a:hover span,
@@ -813,6 +823,13 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services {
+  background-color: #f7f8f9;
+}
+.fondo-servicio {
+  background-color: var(--white);
+}
+
 .services .icon-box {
   text-align: center;
   padding: 70px 20px 80px 20px;
@@ -846,7 +863,7 @@ section {
 
 .services .icon-box .icon svg path {
   transition: 0.5s;
-  fill: #f5f5f5;
+  fill: #ffffff;
 }
 
 .services .icon-box h4 {
@@ -872,52 +889,52 @@ section {
 }
 
 .services .iconbox-blue i {
-  color: #47aeff;
+  color: #b0011e;
 }
 
-.services .iconbox-blue:hover .icon i {
+/* .services .iconbox-blue:hover .icon i {
   color: var(white);
-}
+} */
 
-.services .iconbox-blue:hover .icon path {
+/* .services .iconbox-blue:hover .icon path {
   fill: #47aeff;
-}
+} */
 
 .services .iconbox-orange i {
-  color: #ffa76e;
+  color: #8ea32c;
 }
 
-.services .iconbox-orange:hover .icon i {
+/* .services .iconbox-orange:hover .icon i {
   color: var(white);
 }
 
 .services .iconbox-orange:hover .icon path {
   fill: #ffa76e;
-}
+} */
 
 .services .iconbox-pink i {
-  color: #e80368;
+  color: #ef8e19;
 }
 
-.services .iconbox-pink:hover .icon i {
+/* .services .iconbox-pink:hover .icon i {
   color: var(white);
 }
 
 .services .iconbox-pink:hover .icon path {
   fill: #e80368;
-}
+} */
 
 .services .iconbox-yellow i {
-  color: #ffbb2c;
+  color: var(--vino-tinto);
 }
 
-.services .iconbox-yellow:hover .icon i {
+/* .services .iconbox-yellow:hover .icon i {
   color: var(white);
 }
 
 .services .iconbox-yellow:hover .icon path {
   fill: #ffbb2c;
-}
+} */
 
 .services .iconbox-red i {
   color: #ff5828;
